@@ -57,7 +57,7 @@ rm -rf ~/miniconda3/miniconda.sh
 
 All of our code is hosted in the [Ersilia GitHub Organization](https://github.com/ersilia-os) profile. The Ersilia tool needs to fetch code from GitHub, so make sure Git is installed on your device. You can follow [these instructions](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
-In addition, we highly recommend the fantastic [GitHub CLI](https://cli.github.com/manual/installation), which is used by Ersilia if available.
+In addition, we highly recommend the fantastic [GitHub CLI](https://cli.github.com/), which is used by Ersilia if available.
 
 Once Conda is installed (see above), you can use it to install GitHub CLI
 
