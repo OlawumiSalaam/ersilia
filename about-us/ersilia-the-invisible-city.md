@@ -20,3 +20,21 @@ _Invisible Cities, Italo Calvino_
 DALL·E is an Artificial Intelligence (AI) system developed by [OpenAI](https://openai.com/). DALL·E reads text and creates images based on it. We asked DALL·E to imagine the Ersilia.
 
 ![Poles and strings](<../.gitbook/assets/DALL·E 2022-07-15 03.54.03 - A renascentist painting of a city full of poles and strings, many strings.png>) ![Realistic painting](<../.gitbook/assets/DALL·E 2022-07-15 04.03.06 - A beautiful city having a network of strings from house to house, realistic painting.png>) ![Realistic painting II](<../.gitbook/assets/DALL·E 2022-07-15 04.03.01 - A beautiful city having a network of strings from house to house, realistic painting.png>) ![Renascentist painting](<../.gitbook/assets/DALL·E 2022-07-15 03.54.15 - A renascentist painting of a city full of poles and strings, many strings.png>) ![With multicolored strings](<../.gitbook/assets/DALL·E 2022-07-15 03.55.39 - A photorealistic view of a city that is a network of strings of multiple colors (1).png>) ![In Africa](<../.gitbook/assets/DALL·E 2022-07-15 03.57.02 - An realistic painting of a city in africa with a network of many strings and many inhabitants.png>) ![Drawing](<../.gitbook/assets/DALL·E 2022-07-15 03.58.16 - A city in Africa with a network of strings drawing.png>) ![Just a painting](<../.gitbook/assets/DALL·E 2022-07-15 03.59.24 - Painting of a city with strings from door to door..png>) ![Crayons](<../.gitbook/assets/DALL·E 2022-07-15 04.00.17 - A city imagined by italo calvino having a network of strings from house to house crayon painting.png>) ![Realistic painting III](<../.gitbook/assets/DALL·E 2022-07-15 04.02.48 - A beautiful city having a network of strings from house to house, realistic painting.png>)
+
+## Other Invisible Cities
+
+### The city of Zaira
+
+In vain, ... shall I attempt to describe Zaira, city of memories. I could tell you how many steps make up the streets rising like stairways, and the degree of the arcades’ curves, and what kind of zinc scales cover the roofs; but I already know this would be the same as telling you nothing. The city does not consist of this, but of relationships between the measurements of its space and the events of its past: ...
+
+As this wave from memories flows in, the city soaks it up like a sponge and expands. A description of Zaira as it is today should contain all Zaira’s past. The city, however, does not tell its past, but contains it like the lines of a hand, written in the corners of the streets, the gratings of the windows, the banisters of the steps, the antennae of the lightning rods, the poles of the flags, every segment marked in turn with scratches, indentations, scrolls.
+
+_Invisible Cities, Italo Calvino_
+
+### The city of Isaura
+
+XXX
+
+### The city of Olinda
+
+XXX
