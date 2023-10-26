@@ -13,7 +13,7 @@ They rebuild Ersilia elsewhere. They weave a similar pattern of strings which th
 
 Thus, when travelling in the territory of Ersilia, you come upon the ruins of the abandoned cities, without the walls which do not last, without the bones of the dead which the wind rolls away: spiderwebs of intricate relationships seeking a form.
 
-_Invisible Cities, Italo Calvino_
+_Invisible Cities, Trading Cities, Italo Calvino_
 
 ## The city of Ersilia, imagined by [DALL·E](https://openai.com/dall-e-2/)​ <a href="#the-city-of-ersilia-imagined-by-dall-e" id="the-city-of-ersilia-imagined-by-dall-e"></a>
 
@@ -29,12 +29,22 @@ In vain, ... shall I attempt to describe Zaira, city of memories. I could tell y
 
 As this wave from memories flows in, the city soaks it up like a sponge and expands. A description of Zaira as it is today should contain all Zaira’s past. The city, however, does not tell its past, but contains it like the lines of a hand, written in the corners of the streets, the gratings of the windows, the banisters of the steps, the antennae of the lightning rods, the poles of the flags, every segment marked in turn with scratches, indentations, scrolls.
 
-_Invisible Cities, Italo Calvino_
+_Invisible Cities, Cities & Memory, Italo Calvino_
 
 ### The city of Isaura
 
-XXX
+Isaura, city of the thousand wells, is said to rise over a deep, subterranean lake. On all sides, wherever the inhabitants dig long vertical holes in the ground, they succeed in drawing up water, as far as the city extends, and no farther. Its green border repeats the dark outline of the buried lake; an invisible landscape conditions the visible one; everything that moves in the sunlight is driven by the lapping wave enclosed beneath the rock's calcareous sky.
+
+Consequently two forms of religion exist in Isaura.
+
+The city's gods, according to some people, live in the depths, in the black lake that feeds the underground streams. According to others, the gods live in the buckets that rise, suspended from a cable, as they appear over the edge of the wells, in the revolving pulleys, in the windlasses of the norias, in the pump handles. in the blades of the windmills that draw the water up from the drillings, in the trestles that support the twisting probes, in the reservoirs perched on stilts over the roofs. in the slender arches of the aqueducts, in all the columns of water, 20 the vertical pipes, the plungers, the drains, all the way up to the weathercocks that surmount the airy scaffoldings of Isaura, a city that moves entirely upward.
+
+_Invisible Cities, Thin Cities, Italo Calvino_
 
 ### The city of Olinda
 
-XXX
+In Olinda, if you go out with a magnifying glass and hunt carefully, you may find somewhere a point no bigger than the head of a pin which, if you look at it slightly enlarged, reveals within itself the roofs, the antennas, the skylights, the gardens, the pools, the streamers across the streets, the kiosks in the squeares, the horse-racing track. That point does not remain there: a year later you will find it the size of half a lemon, then as large as a mushroom, then a soup plate. And then it becomes a full-size city, enclosed within the earlier city: a new city that forces its way ahead in the earlier city and presses its way toward the outside.
+
+Olinda is certainly not the only city that grows in concentric circles, like tree trunks which each year add one more ring. But in other cities there remains, in the center, the old narrow girlde of the walls from which the withered spires rise, the towers, the tiled roofs, the domes, while the new quarters sprawl around them like a loosened belt. Not Olinda: the old walls expand bearing the old quarters with them, enlarged but maintaining their proportions an a broader horizon at the edges of the city; they surround the slightly newer quarters, which also grew up on the margins and became thinner to make room for still more recent ones pressing from inside; and so, on and on, to the heart of the city, a totally new Olinda which, in its reduced dimensions retains the features and the flow of lymph of the first Olinda and of all the Olindas that have blossomed one from the other; and within this innermost circle there are always blossoming—though it is hard to discern them—the next Olinda and those that will grow after it.
+
+_Invisible Cities, Hidden Cities, Italo Calvino_
