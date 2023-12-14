@@ -1,7 +1,7 @@
 ---
 description: >-
   We present ChemSampler, a simple tool to sample molecules in a given region of
-  the chemical space.
+  the chemical space
 ---
 
 # Sampling the chemical space
@@ -26,17 +26,6 @@ The parameters file is a `.json` file that allows the user to specify:
 
 ```json
 {
-    "seed_smiles": <origin smiles for the generative tool>,
-    "keep_smiles": <smiles substructure to be preserved in generated candidates>,
-    "avoid_smiles": <smiles substructure to be discarded in generated candidates>,
-    "samplers": [ <list of ersilia identifiers for the samplers> ],
-    "descriptors": [ <list of ersilia identifiers for the molecular descriptors> ],
-    "num_samples": <maximum number of molecules generated>,
-    "max_rounds": <maximum number of rounds>,
-    "time_budget_sec": <maximum time spent per round>,
-    "saturation_number": <number of new candidates required to continue sampling from the same input smiles>,
-    "output_folder": <folder where results will be stored>
-}
 ```
 
 _\* If keep\_smiles or avoid\_smiles are specified, all molecules that do not fulfill either criteria will be removed, which potentially could lead to low number of generated candidates_

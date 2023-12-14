@@ -8,7 +8,7 @@ description: >-
 
 ## Internship project
 
-The Ersilia Model Hub is an open source platform of ready-to-use AI/ML models for biomedical research. With it, scientists can browse a collection of models, select the ones relevant to their research and run predictions! For example, to predict whether a molecule will be active against Malaria. The internship project will be focused on increasing the collection of available models in the Hub.&#x20;
+The Ersilia Model Hub is an open source platform of ready-to-use AI/ML models for biomedical research. With it, scientists can browse a collection of models, select the ones relevant to their research and run predictions! For example, to predict whether a molecule will be active against Malaria. The internship project will be focused on increasing the collection of available models in the Hub.
 
 Specially important to Ersilia is the contribution period. We list below a number of tasks that must be completed in order. <mark style="color:red;">We will not judge interns on how many tasks they can complete, but on the quality of each contribution and the interest to learn, participate and help others in the community.</mark> The mentors are there and willing to help, but they also have a dedicated time slot for reviewing contributions, please be patient if it takes a few hours to get back to you. **Almost all the information you will need to successfully complete the contribution period is enclosed in this document, please read it all before asking questions.**
 
@@ -30,9 +30,9 @@ Ersilia can only accept interns that have been approved by Outreachy and that co
 
 The contribution period runs from <mark style="color:blue;">October 2nd</mark> to <mark style="color:blue;">October 27th</mark>. During this time, interested applicants are welcome to contribute to Ersilia's project following the guidelines in this document.
 
-The contribution period is organised in 4 weeks. Each week has a set of specific goals defined, with the objective that mentors can evaluate the intern's experience, interest in the community and team-building work. Once the week's objectives have been met, please focus on:&#x20;
+The contribution period is organised in 4 weeks. Each week has a set of specific goals defined, with the objective that mentors can evaluate the intern's experience, interest in the community and team-building work. Once the week's objectives have been met, please focus on:
 
-* Improving your contribution (there is always more publications to read, better bug reports to be written etc)&#x20;
+* Improving your contribution (there is always more publications to read, better bug reports to be written etc)
 * Helping out other contributors (we really value group work)
 
 We will be using GitHub issues to track the work of each contributor. Please open a new issue on our Ersilia [repository](https://github.com/ersilia-os/ersilia), choosing the [Outreachy Winter 2023 template](https://github.com/ersilia-os/ersilia/issues/new/choose). You can check the tasks while you complete them.
@@ -51,7 +51,7 @@ The first week is focused on getting to know the Ersilia community, our mission 
 
 1. [Sign up](https://join.slack.com/t/ersilia-outreachy/shared\_invite/zt-1h2u8vbxh-fkyxlOJE20Bx538hQvpC\~A) using your preferred email and name.
 2. Introduce yourself in the #general channel. The general channel is for random questions, interactions with other fellow contributors, writing tips and suggestions...
-3. Use the dedicated channels for questions about specific topics.&#x20;
+3. Use the dedicated channels for questions about specific topics.
 4. Contribute to your peers questions, this is about helping each other and we really value interns who work with the community.
 
 {% hint style="info" %}
@@ -66,7 +66,7 @@ Please use a Slack name that is easy to identify with your GitHub handle to make
 
 * 📖 Getting familiar with the repository structure
 * 🐛 Checking the issues to see what has the community been working on
-* 👀 Watching the repository to receive notifications if you are mentioned&#x20;
+* 👀 Watching the repository to receive notifications if you are mentioned
 * ⭐ Starring the repository if you like the work Ersilia is doing!
 
 {% hint style="danger" %}
@@ -201,9 +201,9 @@ The models we suggest are models that are already incorporated in the [Ersilia M
 
 A big part of what we do at Ersilia is to screen the scientific literature in search of new models and datasets of interest to our community. We are always looking for models that can help speed up drug discovery against infectious and neglected diseases.
 
-In this week, focus on diving into the scientific literature, trying to find studies of interest to our community. To that end, we suggest using websites like PubMed, Google Scholar, BioRxiv and Papers with Code.&#x20;
+In this week, focus on diving into the scientific literature, trying to find studies of interest to our community. To that end, we suggest using websites like PubMed, Google Scholar, BioRxiv and Papers with Code.
 
-To get inspired, check the [Contribute models](../incorporate-models.md) section, look at [existing models](https://ersilia-io/model-hub) in the Hub and our list of [pending models](https://airtable.com/shrTpe45mLKqaHXsc) to incorporate.
+To get inspired, check the [Contribute models](../incorporate-models.md) section, look at [existing models](https://www.ersilia.io/model-hub) in the Hub and our list of [pending models](https://airtable.com/shrTpe45mLKqaHXsc) to incorporate.
 
 #### Task 1: a first model suggestion
 
