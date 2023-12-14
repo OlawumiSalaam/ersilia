@@ -26,6 +26,17 @@ The parameters file is a `.json` file that allows the user to specify:
 
 ```json
 {
+    "seed_smiles": <smiles of origin used for the generation of new candidates>,
+    "keep_smiles": <smiles of a substructure to maintain>,
+    "avoid_smiles": <smiles of a substructure to discard in the generative process>,
+    "samplers": [ <list of generative models (ersilia identifier code)> ],
+    "descriptors": [ <list of molecular descriptors (ersilia identifier code)> ],
+    "num_samples": <maximum number of candidates to generate>,
+    "max_rounds": <maximum number of rounds>,
+    "time_budget_sec": <maximum time spent per round>,
+    "saturation_number": <minimum number of new candidates obtained from the input smiles to continue using the same input in the next round>,
+    "output_folder": <folder where results will be stored>
+}
 ```
 
 _\* If keep\_smiles or avoid\_smiles are specified, all molecules that do not fulfill either criteria will be removed, which potentially could lead to low number of generated candidates_
