@@ -50,6 +50,7 @@
 
 * [Diversity and Inclusion Statement](about-us/diversity-and-inclusion-statement.md)
 * [Code of Conduct](about-us/code-of-conduct.md)
+* [Open Standards and Best Practices](about-us/open-standards-and-best-practices.md)
 * [Ersilia Privacy Notice](about-us/ersilia-privacy-notice.md)
 * [Ersilia, the Invisible City](about-us/ersilia-the-invisible-city.md)
 * [Strategic Plan 2021-2023](about-us/strategic-plan-2021-2023.md)
