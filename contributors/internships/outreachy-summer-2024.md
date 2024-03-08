@@ -215,7 +215,7 @@ Task 1:
       2. [eos31ve](https://github.com/ersilia-os/eos31ve)
       3. [eos9tyg](https://github.com/ersilia-os/eos9tyg)
       4. [eos6oli](https://github.com/ersilia-os/eos6oli)
-2. Open a repository in your GitHub user with the appropriate structure (for example, the repository will contain a README file that will explain what is in there, steps to run/reproduce your work, the necessary datasets and folders, licenses and gitignore files)
+2. Using [this repository](https://github.com/GemmaTuron/model-validation-example) as an example, create a repository in your GitHub account with the appropriate structure (for example, the repository will contain a README file that will explain what is in there, steps to run/reproduce your work, the necessary datasets and folders, licenses and gitignore files)
 3. Download and run the selected model from Ersilia and make sure it works
 4. Select a list of 1000 molecules from public repositories and make sure they are represented as standard SMILES&#x20;
 5. Run predictions for the 1000 molecules, create the necessary plots and explain the results you are obtaining
