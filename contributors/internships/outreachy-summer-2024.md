@@ -204,7 +204,17 @@ For week 2, we will focus on Task 1 and Task 2.&#x20;
 
 Task 1:
 
-1. Pick a model from the list
+1. Pick a model from the list:&#x20;
+   1. hERG Models:
+      1. [eos2ta5](https://github.com/ersilia-os/eos2ta5)
+      2. [eos30f3](https://github.com/ersilia-os/eos30f3)
+      3. [eos30gr](https://github.com/ersilia-os/eos30gr)
+      4. [eos4tcc](https://github.com/ersilia-os/eos4tcc)
+   2. ADME Models:
+      1. [eos74bo](https://github.com/ersilia-os/eos74bo)
+      2. [eos31ve](https://github.com/ersilia-os/eos31ve)
+      3. [eos9tyg](https://github.com/ersilia-os/eos9tyg)
+      4. [eos6oli](https://github.com/ersilia-os/eos6oli)
 2. Open a repository in your GitHub user with the appropriate structure (for example, the repository will contain a README file that will explain what is in there, steps to run/reproduce your work, the necessary datasets and folders, licenses and gitignore files)
 3. Download and run the selected model from Ersilia and make sure it works
 4. Select a list of 1000 molecules from public repositories and make sure they are represented as standard SMILES&#x20;
