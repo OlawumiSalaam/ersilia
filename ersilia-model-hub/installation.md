@@ -89,20 +89,6 @@ Activate Git LFS:
 git-lfs install
 ```
 
-#### Pre-requisite 5: The Isaura data lake
-
-We highly recommend installation of the [Isaura](https://github.com/ersilia-os/isaura) data lake. With Isaura, you will be able to cache your model predictions (i.e. store them in your local computer). Isaura is a relatively light Python package:
-
-```
-#activate ersilia's conda environment (see instructions below to create it)
-conda activate ersilia
-python -m pip install isaura==0.1
-```
-
-{% hint style="danger" %}
-Isaura has different functionalities, please make sure to install v0.1
-{% endhint %}
-
 #### Pre-requisite 6: Docker
 
 Docker containers are an excellent way to share applications and simplify the management of system requirements and configurations. Please [install Docker](https://www.docker.com) to ensure that all our AI/ML assets will work smoothly in your local device.
@@ -115,7 +101,7 @@ Open a terminal and set up a [Conda](https://docs.conda.io/projects/conda/en/lat
 
 ```bash
 # create a conda environment
-conda create -n ersilia python=3.7
+conda create -n ersilia python=3.10
 # activate the environment
 conda activate ersilia
 ```
@@ -144,4 +130,16 @@ ersilia catalog
 The Ersilia Model Hub is growing continuously to fulfill the needs of the community. Please do not hesitate to [request new models](https://www.ersilia.io/request-model)!
 {% endhint %}
 
-###
+#### Extra-requisite: The Isaura data lake
+
+We highly recommend installation of the [Isaura](https://github.com/ersilia-os/isaura) data lake. With Isaura, you will be able to cache your model predictions (i.e. store them in your local computer). Isaura is a relatively light Python package:
+
+```
+#activate ersilia's conda environment
+conda activate ersilia
+python -m pip install isaura==0.1
+```
+
+{% hint style="danger" %}
+Isaura has different functionalities, please make sure to install v0.1
+{% endhint %}
