@@ -39,6 +39,14 @@ Some of the considerations to take into account:
 Use the demo platform to filter out candidates and propose new molecules for experimental testing!
 {% endhint %}
 
+### Step 0: AMA
+
+Ask Me Anything is a GPT based conversational bot restricted to providing answers about pathogens
+
+{% hint style="warning" %}
+This is an implementation of the foundational GPT3.5 model and is not trained specifically in the biomedical domain, it can make mistakes.
+{% endhint %}
+
 ### Step 1: Train a bioactivity predictor
 
 We will use a dataset presented in [Liu et al, 2023](https://pubmed.ncbi.nlm.nih.gov/37231267/) to train a simple QSAR model predicting bioactivity of small molecules against _A.baumannii,_ one of the WHO priority pathogens.&#x20;
@@ -54,6 +62,10 @@ Try to answer the following questions:
 * Is it a balanced dataset? Why or why not?
 * What is the performance of the models at different cut-offs?
 * How does our quick modelling compare to the author's work?
+
+{% hint style="info" %}
+_Hints:_ have a look at the publication looking for: origin of the dataset & data curation processes and model performance values such as ROC curves or precision and recall values. If you are struggling to identify some of the key features, have a look at this helper document.
+{% endhint %}
 
 {% hint style="warning" %}
 The modelling done in this step is a quick surrogate for the training purposes. In a real-time scenario, a more complex framework & analysis would be used. Have a look at [ZairaChem](https://www.nature.com/articles/s41467-023-41512-2) for automated ML pipelines!
@@ -71,6 +83,10 @@ Try to answer the following questions for each model:
 * What type of output does the model produce?
 * What is a good threshold for keeping molecules?
 
+{% hint style="info" %}
+_Hints_: have a look at the publications looking and look for values of SAScores for chemical libraries, origin of datasets used to train the hERG cardiotoxicity model and experimental values selected. If you are struggling to identify some of the key features, have a look at this helper document.
+{% endhint %}
+
 ### Step 3: Generate new candidates
 
 Using the selected molecule in Step 2, play with the molecule generator implemented in the demo app. This is based on the MolMIM package ([Reidenbach et al, 2022](https://arxiv.org/abs/2208.09016)). MolMIM offers automated molecular generation optimising either for chemical beauty (QED) or SlogP.
@@ -87,6 +103,12 @@ To complete the demo, we suggest having a look at automated database querying to
 
 We are using [Chem-Space](https://chem-space.com/) to identify vendors.
 
+### Step 5: Group discussion
+
+Prepare to summarise your findings to the rest of the participants!
+
+***
+
 ## Glossary of Terms:
 
 **Artificial intelligence (AI)**: An overarching term that refers to software that mimics human reasoning.
@@ -95,13 +117,10 @@ We are using [Chem-Space](https://chem-space.com/) to identify vendors.
 
 **Classification model**: A ML model that predicts probability that a molecule belongs to a certain class, i.e. the ‘1’ (active) class or ‘0’ (inactive) class.
 
-**Activity cut-off**: The experimental value used to classify compounds into ‘active’ and ‘inactive’ categories.
-
-**Prediction interpretation**: The output of a classification model is typically a prediction probability, between 0 and 1, that the compound belongs to the ‘1’ (active) class. The closer the prediction probability is to 1, the more confident the model is that the compound belongs to the ‘1’ (active) class.
-
-**Prediction threshold**: The cut-off applied to the model prediction scores to binarize the compounds into predicted actives and predicted inactives.
-
-**AUROC/ROC-AUC**: The area under the receiver-operating characteristic curve. The ROC curve is constructed through a comparison of model predictions to the ground-truth values by plotting the true-positive rate versus the false-positive rate. The area under the ROC curve is a metric of model predictive performance typically between 0.5 (random classifier) and 1.0 (perfect classifier).
+* **Activity cut-off**: The experimental value used to classify compounds into ‘active’ and ‘inactive’ categories.
+* **Prediction interpretation**: The output of a classification model is typically a prediction probability, between 0 and 1, that the compound belongs to the ‘1’ (active) class. The closer the prediction probability is to 1, the more confident the model is that the compound belongs to the ‘1’ (active) class.
+* **Prediction threshold**: The cut-off applied to the model prediction scores to binarize the compounds into predicted actives and predicted inactives.
+* **AUROC/ROC-AUC**: The area under the receiver-operating characteristic curve. The ROC curve is constructed through a comparison of model predictions to the ground-truth values by plotting the true-positive rate versus the false-positive rate. The area under the ROC curve is a metric of model predictive performance typically between 0.5 (random classifier) and 1.0 (perfect classifier).
 
 **Regression model**: A ML model that predicts the exact continuous experimental output, e.g. the specific molar solubility of a compound.
 
