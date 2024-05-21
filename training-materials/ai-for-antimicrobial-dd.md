@@ -55,11 +55,15 @@ Try to answer the following questions:
 * What is the performance of the models at different cut-offs?
 * How does our quick modelling compare to the author's work?
 
+{% hint style="warning" %}
+The modelling done in this step is a quick surrogate for the training purposes. In a real-time scenario, a more complex framework & analysis would be used. Have a look at [ZairaChem](https://www.nature.com/articles/s41467-023-41512-2) for automated ML pipelines!
+{% endhint %}
+
 ### Step 2: Rank candidates
 
 Using the model we have just trained as well as auxiliary models available in the Ersilia Model Hub, rank and select a few candidates to proceed to the next steps.
 
-In addition to the bioactivity predictor, we will use the Synthetic Accessibility (Ertl et al, 2009) and hERG cardiotoxicity (Jiménez-Luna et al, 2021).
+In addition to the bioactivity predictor, we will use the Synthetic Accessibility ([Ertl et al, 2009](https://jcheminf.biomedcentral.com/articles/10.1186/1758-2946-1-8)) and hERG cardiotoxicity ([Jiménez-Luna et al, 2021](https://pubs.acs.org/doi/10.1021/acs.jcim.0c01344)).
 
 Try to answer the following questions for each model:
 
@@ -77,36 +81,42 @@ Try to answer the following questions:
 * Do the generated candidates present better predicted biochemical profiles?
 * What would your next steps be?
 
+### Step 4: Purchase compounds
+
+To complete the demo, we suggest having a look at automated database querying to see which compounds or starting points we could directly purchase from vendors!
+
+We are using [Chem-Space](https://chem-space.com/) to identify vendors.
+
 ## Glossary of Terms:
 
-Artificial intelligence (AI): An overarching term that refers to software that mimics human reasoning.
+**Artificial intelligence (AI)**: An overarching term that refers to software that mimics human reasoning.
 
-Machine learning (ML): A subset of AI that employs various statistical methods and computational algorithms to analyse patterns from datasets and to provide meaningful insights and predictions.
+**Machine learning (ML)**: A subset of AI that employs various statistical methods and computational algorithms to analyse patterns from datasets and to provide meaningful insights and predictions.
 
-Classification model: A ML model that predicts probability that a molecule belongs to a certain class, i.e. the ‘1’ (active) class or ‘0’ (inactive) class.
+**Classification model**: A ML model that predicts probability that a molecule belongs to a certain class, i.e. the ‘1’ (active) class or ‘0’ (inactive) class.
 
-Activity cut-off: The experimental value used to classify compounds into ‘active’ and ‘inactive’ categories.
+**Activity cut-off**: The experimental value used to classify compounds into ‘active’ and ‘inactive’ categories.
 
-Prediction interpretation: The output of a classification model is typically a prediction probability, between 0 and 1, that the compound belongs to the ‘1’ (active) class. The closer the prediction probability is to 1, the more confident the model is that the compound belongs to the ‘1’ (active) class.
+**Prediction interpretation**: The output of a classification model is typically a prediction probability, between 0 and 1, that the compound belongs to the ‘1’ (active) class. The closer the prediction probability is to 1, the more confident the model is that the compound belongs to the ‘1’ (active) class.
 
-Prediction threshold: The cut-off applied to the model prediction scores to binarize the compounds into predicted actives and predicted inactives.
+**Prediction threshold**: The cut-off applied to the model prediction scores to binarize the compounds into predicted actives and predicted inactives.
 
-AUROC/ROC-AUC: The area under the receiver-operating characteristic curve. The ROC curve is constructed through a comparison of model predictions to the ground-truth values by plotting the true-positive rate versus the false-positive rate. The area under the ROC curve is a metric of model predictive performance typically between 0.5 (random classifier) and 1.0 (perfect classifier).
+**AUROC/ROC-AUC**: The area under the receiver-operating characteristic curve. The ROC curve is constructed through a comparison of model predictions to the ground-truth values by plotting the true-positive rate versus the false-positive rate. The area under the ROC curve is a metric of model predictive performance typically between 0.5 (random classifier) and 1.0 (perfect classifier).
 
-Regression model: A ML model that predicts the exact continuous experimental output, e.g. the specific molar solubility of a compound.
+**Regression model**: A ML model that predicts the exact continuous experimental output, e.g. the specific molar solubility of a compound.
 
-Large-language model (LLM): A model that has been trained on a large corpus of textual data to interpret plain text prompts and respond appropriately.
+**Large-language model (LLM)**: A model that has been trained on a large corpus of textual data to interpret plain text prompts and respond appropriately.
 
-Generative models: AI methods that synthesise new outputs often in response to a prompt. For example, these can take the form of chemical generators that propose new compounds or large-language models.
+**Generative models**: AI methods that synthesise new outputs often in response to a prompt. For example, these can take the form of chemical generators that propose new compounds or large-language models.
 
-IC50: The half maximal inhibitory concentration measures the drug concentration at which 50% of a biological process is inhibited.
+**IC50**: The half maximal inhibitory concentration measures the drug concentration at which 50% of a biological process is inhibited.
 
-pIC50: The negative log transformation of IC50 ‘-log(IC50)’ scales a dataset to a more linear range of values, which is more amenable to ML modelling.
+**pIC50**: The negative log transformation of IC50 ‘-log(IC50)’ scales a dataset to a more linear range of values, which is more amenable to ML modelling.
 
-MIC50: The minimum inhibitory concentration is the lowest drug concentration that visibly inhibits at least 50% of microbial growth. This is a less precise measurement than IC50 and is typically used in the serial dilution assays for in vitro whole-cell activity measurements.
+**MIC50**: The minimum inhibitory concentration is the lowest drug concentration that visibly inhibits at least 50% of microbial growth. This is a less precise measurement than IC50 and is typically used in the serial dilution assays for in vitro whole-cell activity measurements.
 
-Synthetic accessibility: An estimated score that captures the difficulty in synthesising a compound.
+**Synthetic accessibility**: An estimated score that captures the difficulty in synthesising a compound.
 
-Chemical analogue: A compound that shares the majority of chemical features to another compound, particularly the core, with only small structural modifications.
+**Chemical analogue**: A compound that shares the majority of chemical features to another compound, particularly the core, with only small structural modifications.
 
-Chemical space: The ensemble of all possible chemical structures.\
+**Chemical space**: The ensemble of all possible chemical structures.\
