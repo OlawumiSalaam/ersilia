@@ -2,21 +2,16 @@
 description: Introductory 2h workshop to AI/ML tools for antimicrobial drug discovery
 ---
 
-# AI for Antimicrobial DD
-
-## Introduction
+# 🦠 AI for Antimicrobial Drug Discovery
 
 There is a plethora of AI/ML tools geared towards accelerating drug discovery. In this 2h problem-solving oriented activity, the participants will have the opportunity to understand the fundamental steps to couple AI/ML expertise into their pipelines, in a fully no-code manner!
-
-<figure><img src="../.gitbook/assets/Screenshot 2024-05-21 at 05.28.34.png" alt=""><figcaption><p>AI/ML can be applied to all stages of the drug discovery pipeline</p></figcaption></figure>
 
 ## Materials
 
 You will find all the materials needed in the following links:
 
 * Workshop App
-* Publications
-* Guidance Document
+* [Publications](https://drive.google.com/drive/folders/1hphHchyEs4ySNBW4hFJwwQYrwbDRh8H9?usp=sharing)
 * Presentation
 
 ## Hands-on activity
@@ -39,15 +34,15 @@ Some of the considerations to take into account:
 Use the demo platform to filter out candidates and propose new molecules for experimental testing!
 {% endhint %}
 
-### Step 0: AMA
+### [0️⃣](https://emojipedia.org/keycap-digit-zero) AMA
 
-Ask Me Anything is a GPT based conversational bot restricted to providing answers about pathogens
+Ask Me Anything is a GPT-based conversational bot restricted to providing answers about pathogens
 
 {% hint style="warning" %}
-This is an implementation of the foundational GPT3.5 model and is not trained specifically in the biomedical domain, it can make mistakes.
+This is simply an implementation of the foundational GPT3.5 model and is not trained specifically in the biomedical domain, it can make mistakes.
 {% endhint %}
 
-### Step 1: Train a bioactivity predictor
+### [1️⃣](https://emojipedia.org/keycap-digit-one) Train a bioactivity predictor
 
 We will use a dataset presented in [Liu et al, 2023](https://pubmed.ncbi.nlm.nih.gov/37231267/) to train a simple QSAR model predicting bioactivity of small molecules against _A.baumannii,_ one of the WHO priority pathogens.&#x20;
 
@@ -64,14 +59,14 @@ Try to answer the following questions:
 * How does our quick modelling compare to the author's work?
 
 {% hint style="info" %}
-_Hints:_ have a look at the publication looking for: origin of the dataset & data curation processes and model performance values such as ROC curves or precision and recall values. If you are struggling to identify some of the key features, have a look at this helper document.
+_Hints:_ have a look at the publication looking for: origin of the dataset & data curation processes and model performance values such as ROC curves or precision and recall values. If you are struggling to identify some of the key features, have a look at this [helper document](https://drive.google.com/file/d/1ymKiwZtk6foMP7\_6EnKLed505O22SlRo/view?usp=drive\_link).
 {% endhint %}
 
 {% hint style="warning" %}
 The modelling done in this step is a quick surrogate for the training purposes. In a real-time scenario, a more complex framework & analysis would be used. Have a look at [ZairaChem](https://www.nature.com/articles/s41467-023-41512-2) for automated ML pipelines!
 {% endhint %}
 
-### Step 2: Rank candidates
+### [2️⃣](https://emojipedia.org/keycap-digit-two) Rank candidates
 
 Using the model we have just trained as well as auxiliary models available in the Ersilia Model Hub, rank and select a few candidates to proceed to the next steps.
 
@@ -84,10 +79,10 @@ Try to answer the following questions for each model:
 * What is a good threshold for keeping molecules?
 
 {% hint style="info" %}
-_Hints_: have a look at the publications looking and look for values of SAScores for chemical libraries, origin of datasets used to train the hERG cardiotoxicity model and experimental values selected. If you are struggling to identify some of the key features, have a look at this helper document.
+_Hints_: have a look at the publications looking and look for values of SAScores for chemical libraries, origin of datasets used to train the hERG cardiotoxicity model and experimental values selected. If you are struggling to identify some of the key features, have a look at this [helper document](https://drive.google.com/file/d/1ymKiwZtk6foMP7\_6EnKLed505O22SlRo/view?usp=drive\_link).
 {% endhint %}
 
-### Step 3: Generate new candidates
+### [3️⃣](https://emojipedia.org/keycap-digit-three) Generate new candidates
 
 Using the selected molecule in Step 2, play with the molecule generator implemented in the demo app. This is based on the MolMIM package ([Reidenbach et al, 2022](https://arxiv.org/abs/2208.09016)). MolMIM offers automated molecular generation optimising either for chemical beauty (QED) or SlogP.
 
@@ -97,13 +92,13 @@ Try to answer the following questions:
 * Do the generated candidates present better predicted biochemical profiles?
 * What would your next steps be?
 
-### Step 4: Purchase compounds
+### [4️⃣](https://emojipedia.org/keycap-digit-four) Purchase compounds
 
 To complete the demo, we suggest having a look at automated database querying to see which compounds or starting points we could directly purchase from vendors!
 
 We are using [Chem-Space](https://chem-space.com/) to identify vendors.
 
-### Step 5: Group discussion
+### [5️⃣](https://emojipedia.org/keycap-digit-five) Group discussion
 
 Prepare to summarise your findings to the rest of the participants!
 

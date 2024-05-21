@@ -41,10 +41,9 @@
 
 ## 📑 Training materials
 
-* [Google Colaboratory](training-materials/google-colaboratory.md)
-* [Python 101](training-materials/python-101.md)
 * [ML for Drug Discovery](training-materials/ml-for-drug-discovery.md)
-* [AI for Antimicrobial DD](training-materials/ai-for-antimicrobial-dd.md)
+* [🦠 AI for Antimicrobial Drug Discovery](training-materials/ai-for-antimicrobial-drug-discovery.md)
+* [Python 101](training-materials/python-101.md)
 * [External resources](training-materials/external-resources.md)
 
 ## 🌍 About Us

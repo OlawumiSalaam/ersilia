@@ -181,7 +181,7 @@ To help the mentors keep track of your progress, add all relevant information to
 
 Once you have successfully tested 5 models, go on and try to repeat the exercise in Google Colaboratory. You can also test one model in the CLI and in Google Colab in parallel. You can use the[ Colaboratory Template Notebook](https://github.com/ersilia-os/ersilia/blob/master/notebooks/ErsiliaOnColaboratory.ipynb) from Ersilia's repository.
 
-[Google Colaboratory](../../training-materials/google-colaboratory.md) uses Google's servers (Linux machines) to run the code, which is very convenient to bypass installation issues. To run Google Colab, you only need a Google Account. If you do not have and do not wish to open a Google Account, we can skip this step.All
+[Google Colaboratory](broken-reference) uses Google's servers (Linux machines) to run the code, which is very convenient to bypass installation issues. To run Google Colab, you only need a Google Account. If you do not have and do not wish to open a Google Account, we can skip this step.All
 
 {% hint style="info" %}
 All the model requirements stay within Google's free tier
