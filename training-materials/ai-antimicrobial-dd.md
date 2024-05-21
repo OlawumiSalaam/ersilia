@@ -2,7 +2,7 @@
 description: Introductory 2h workshop to AI/ML tools for antimicrobial drug discovery
 ---
 
-# 🦠 AI for Antimicrobial Drug Discovery
+# AI for Antimicrobial Drug Discovery
 
 There is a plethora of AI/ML tools geared towards accelerating drug discovery. In this 2h problem-solving oriented activity, the participants will have the opportunity to understand the fundamental steps to couple AI/ML expertise into their pipelines, in a fully no-code manner!
 

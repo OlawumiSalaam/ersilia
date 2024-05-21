@@ -42,7 +42,7 @@
 ## 📑 Training materials
 
 * [ML for Drug Discovery](training-materials/ml-for-drug-discovery.md)
-* [🦠 AI for Antimicrobial Drug Discovery](training-materials/ai-for-antimicrobial-drug-discovery.md)
+* [AI for Antimicrobial Drug Discovery](training-materials/ai-antimicrobial-dd.md)
 * [Python 101](training-materials/python-101.md)
 * [External resources](training-materials/external-resources.md)
 
