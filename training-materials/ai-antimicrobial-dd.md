@@ -10,9 +10,9 @@ There is a plethora of AI/ML tools geared towards accelerating drug discovery. I
 
 You will find all the materials needed in the following links:
 
-* Workshop App
+* Workshop App: [A](https://ersilia-ai-intro-workshop.streamlit.app/), [B](https://ersilia-demo-6wjpd.ondigitalocean.app/), [C](https://ersilia-demo2-y3qpb.ondigitalocean.app/)
 * [Publications](https://drive.google.com/drive/folders/1hphHchyEs4ySNBW4hFJwwQYrwbDRh8H9?usp=sharing)
-* Presentation
+* [Slides](https://drive.google.com/file/d/16V3-f786CZSNakbHvUfjzXU42fgbtbIP/view?usp=drive\_link)
 
 ## Hands-on activity
 
