@@ -75,18 +75,13 @@ import seaborn as sns
 
 ### **How to access course materials**&#x20;
 
-The materials for this course are located in a publicly accessible folder on Google Drive under the folders: Data Exercises Exercises\_solved Theory It is convenient to have the Courses folder in your drive.&#x20;
+The materials for this course are located in a publicly accessible folder on [GitHub](https://github.com/ersilia-os/python101). To download the materials locally, you can simply clone it:
 
-Below are the steps to copy the Courses folder to your drive.&#x20;
+```
+git clone https://github.com/ersilia-os/python101.git
+```
 
-* Access the [Courses folder](https://drive.google.com/drive/folders/1m7MdRpC9Ic7ch8NlFhS1C4fVolooCR4k) on Google drive. It will appear in your "Shared with me" folder automatically.&#x20;
-* In the Courses folder, right click on the Python 101 folder.&#x20;
-* In the menu that opens, click on Download to download the folder to your local machine&#x20;
-* Once the folder has been downloaded, go to “My Drive”&#x20;
-* Click on the icon that reads “New” and click on “File Upload”&#x20;
-* In the dialog box that opens, navigate to the just downloaded file’s location and click on the folder. Then click on “Upload”.&#x20;
-
-The folder should upload into your drive and, you should have the Python 101 course folder with its files in your drive.
+To modify or play around with the notebooks, please make your own fork.
 
 ### Summary of the sessions&#x20;
 
