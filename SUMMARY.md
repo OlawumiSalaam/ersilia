@@ -14,6 +14,7 @@
   * [Troubleshooting models](ersilia-model-hub/contribute-models/troubleshooting-models.md)
 * [More for contributors](ersilia-model-hub/more-for-contributors/README.md)
   * [Versioning](ersilia-model-hub/more-for-contributors/versioning.md)
+  * [BioModels Annotation](ersilia-model-hub/more-for-contributors/biomodels-annotation.md)
 
 ## 🙌 Contributors
 
