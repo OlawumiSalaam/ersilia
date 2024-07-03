@@ -48,3 +48,7 @@ In Olinda, if you go out with a magnifying glass and hunt carefully, you may fin
 Olinda is certainly not the only city that grows in concentric circles, like tree trunks which each year add one more ring. But in other cities there remains, in the center, the old narrow girlde of the walls from which the withered spires rise, the towers, the tiled roofs, the domes, while the new quarters sprawl around them like a loosened belt. Not Olinda: the old walls expand bearing the old quarters with them, enlarged but maintaining their proportions an a broader horizon at the edges of the city; they surround the slightly newer quarters, which also grew up on the margins and became thinner to make room for still more recent ones pressing from inside; and so, on and on, to the heart of the city, a totally new Olinda which, in its reduced dimensions retains the features and the flow of lymph of the first Olinda and of all the Olindas that have blossomed one from the other; and within this innermost circle there are always blossoming—though it is hard to discern them—the next Olinda and those that will grow after it.
 
 _Invisible Cities, Hidden Cities, Italo Calvino_
+
+## Learn more
+
+If you want to learn more, read [this blogpost](https://medium.com/ersiliaio/invisible-cities-so-far-748248bee9d7) in Ersilia's Medium profile. Also, feel free to explore the [Ersilia](https://github.com/ersilia-os/ersilia), [ZairaChem](https://github.com/ersilia-os/zaira-chem) and [Olinda](https://github.com/ersilia-os/olinda) repositories in GitHub.
