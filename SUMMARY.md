@@ -42,8 +42,9 @@
 
 ## 📑 Training materials
 
-* [ML for Drug Discovery](training-materials/ml-for-drug-discovery.md)
-* [AI for Antimicrobial Drug Discovery](training-materials/ai-antimicrobial-dd.md)
+* [AI2050 - Intro workshop](training-materials/ai-antimicrobial-dd.md)
+* [AI2050 - AI for Drug Discovery](training-materials/ai2050-ai-for-drug-discovery.md)
+* [Intro to ML for Drug Discovery](training-materials/ml-for-drug-discovery.md)
 * [Python 101](training-materials/python-101.md)
 * [External resources](training-materials/external-resources.md)
 
