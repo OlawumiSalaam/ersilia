@@ -64,10 +64,10 @@ Do some group discussion around the following properties. Why should data have e
 
 During the skills development, we spoke about the need for clean data and some examples of common problems in chemical datasets. Ideally, we need a set of compound structures and corresponding assay outcomes from the same experimental conditions. Now we will identify some examples of data inconsistencies in a dataset from literature.
 
-The Community for Open-Antimicrobial Drug Discovery (CO-ADD) has curated a database of compounds that have been tested for activity against a set of infectious bacteria known as the ESKAPE pathogens. Let’s say we want to create a clean dataset to predict the activity of compounds against the A. baumannii bacteria. Download the dose-response dataset from this [link](https://db.co-add.org/downloads/) and answer the following questions:
+The Community for Open-Antimicrobial Drug Discovery (CO-ADD) has curated a database of compounds that have been tested for activity against a set of infectious bacteria known as the ESKAPE pathogens. Let’s say we want to create a clean dataset to predict the activity of compounds against the _A.baumannii_ bacteria. Download the dose-response dataset from this [link](https://db.co-add.org/downloads/) and answer the following questions:
 
 1. What is the output of the assay measuring?
-2. Find examples of data inconsistencies that cause the dataset to not be complete, consistent, accurate, or relevant for modelling A. baumanni activity. How did you find this issue in the dataset?
+2. Find examples of data inconsistencies that cause the dataset to not be complete, consistent, accurate, or relevant for modelling _A.baumannii_ activity. How did you find this issue in the dataset?
 3. How could you address each of the points you found in (b) to make the dataset more clean?
 4. Were there any other checks you performed where the dataset did not have an issue?
 
@@ -86,11 +86,11 @@ In group, discuss and answer the following questions:
 
 <mark style="color:blue;">Task 3.2: Chemical space visualization</mark>
 
-Go to ChEMBL and download the GSK and Novartis 3D7 screening set for malaria (ChEMBL IDs). Then uploads these to the chemical space visualization app (link) and select the ‘OSM’ dataset from the example libraries to answer the following questions:
+Go to ChEMBL and download the St Jude 3D7 screening set for malaria (ID: CHEMBL730079). Follow the step-by-step instructions in the breakout session slides. Then upload this dataset to the chemical space visualization app (link) and select the ‘MMV Malaria Box’ and ‘Open Source Malaria’ checkboxes from the list of example libraries. Imagine we use the St Jude 3D7 dataset to train a model to screen for new chemical hits in the MMV Malaria Box and Open Source Malaria datasets. Answer the following questions:
 
-1. If we trained a model for each of the GSK and Novartis datasets, which model would be more likely to provide good predictions for our prospective OSM screening data?
-2. Looking at the chemical space of your chosen model, do you have any concerns with the quality of predictions from this model for the OSM data?
-3. After testing our first round of compounds experimentally, what next step could we take to improve our model further?
+1. Do you think that a model that has been trained on the St Jude 3D7 dataset would be more predictive for the MMV Malaria Box or the Open Source Malaria libraries? Why?
+2. What steps could you take to make our model more applicable to the library that would be more difficult to make predictions for?
+3. How could we improve our model once we’ve experimentally tested the first set of compounds that were selected from the virtual screening?
 
 ### Breakout session day 2
 
@@ -100,11 +100,11 @@ A virtual screening cascade allows us to mimic in the computer some of the exper
 Virtual screening cascades are not meant to substitute experimental testing, but act as a decision-making support tool
 {% endhint %}
 
-#### A.baumannii activity prediction <a href="#mmv-malaria-box" id="mmv-malaria-box"></a>
+#### _A.baumannii_ activity prediction <a href="#mmv-malaria-box" id="mmv-malaria-box"></a>
 
 In this activity, we will replicate the work described in Liu et al, 2023, where they build an ML model to identify novel _A.baumannii_ inhibitors and use it to filter the [Drug Repurposing Hub](https://www.broadinstitute.org/drug-repurposing-hub).&#x20;
 
-During the skills development session, we have done a deep dive into ML model building using the _A.baumannii_ model as an example. Now, you have to download the list of compounds available in the Drug Repurposing Hub and continue the "virtual screening" similar to the original author's work. To that end, we suggest running predictions against A.baumannii activity and a few accessory models available through Ersilia to select the best candidates. In short, the steps to follow are:
+During the skills development session, we have done a deep dive into ML model building using the _A.baumannii_ model as an example. Now, you have to download the list of compounds available in the Drug Repurposing Hub and continue the "virtual screening" similar to the original author's work. To that end, we suggest running predictions against _A.baumannii_ activity and a few accessory models available through Ersilia to select the best candidates. In short, the steps to follow are:
 
 1. Download the Drug Repurposing Hub data for your group from this [link](https://drive.google.com/drive/folders/1FVd05NeUf\_zJXD-OlSyinmOi0lOcLdrr?usp=drive\_link).
 2. Look at the [Ersilia Model Hub](https://ersilia.io/model-hub) models available online (select Online in the left menu of the website).
@@ -138,7 +138,7 @@ For each model, think about the following questions:
 
 In addition, think about the following concepts:
 
-* Does the outcome of the model make sense? (i.e, malaria activity is predicted high for most molecules since it is a library optimized for malaria activity). If it does not make sense, perhaps we have the wrong interpretation of the model output
+* Does the outcome of the model make sense? If it does not make sense, perhaps we have the wrong interpretation of the model output.
 * Is the cut-off I have selected too stringent (i.e, I am losing too many molecules and I should be more permissive?)
 * Is this model very relevant for the current dataset (i.e, is malaria activity equally important as natural product likeness?)
 
