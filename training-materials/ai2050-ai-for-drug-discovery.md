@@ -15,17 +15,17 @@ Each day is organised in four main activities:
 
 ### Course Contents <a href="#course-contents" id="course-contents"></a>
 
-<table><thead><tr><th width="148">Activity</th><th>Session 1</th><th>Session 2</th><th>Session 3</th><th>Session 4</th></tr></thead><tbody><tr><td>Keynote</td><td>Slides<br><a href="https://www.menti.com/alsc5obgc7z6">Menti</a></td><td><a href="https://drive.google.com/file/d/1pSrGRyvrpmPndBGaNaQutKU31AIEs52t/view?usp=drive_link">Slides</a></td><td>Slides</td><td>Slides</td></tr><tr><td>Skills development</td><td><a href="https://test-day1-npqfr.ondigitalocean.app/">App</a><br><a href="https://drive.google.com/file/d/18uKYzlF69mUaZjEUAMN_JD7jhDal4Jqa/view?usp=drive_link">Slides</a><br><a href="https://www.menti.com/alfgx5p5x3qq">Menti</a> </td><td><a href="https://test-day2-i5h5z.ondigitalocean.app/">App</a><br><a href="https://www.menti.com/altn98ny9d6h">Menti</a></td><td>App<br><a href="https://www.menti.com/alypgk7nwtd5">Menti</a></td><td>App<br>Slides</td></tr><tr><td>Breakout</td><td><p><a href="https://test-day1-npqfr.ondigitalocean.app/">App</a></p><p><a href="https://drive.google.com/file/d/1zbgxw40dtRVrtUWyCZACtH88R8UtEECI/view?usp=drive_link">Slides</a></p><p><a href="ai2050-ai-for-drug-discovery.md#breakout-session-day-1">Guide</a></p></td><td><p><a href="https://ersilia.io/model-hub">App</a></p><p><a href="https://drive.google.com/file/d/13kyE9HKACb2hShcMFT3nYEUKyDRQ8Hf-/view?usp=drive_link">Slides</a></p><p><a href="ai2050-ai-for-drug-discovery.md#breakout-session-day-2">Guide</a></p></td><td>App<br><a href="ai2050-ai-for-drug-discovery.md#breakout-session-day-3">Guide</a></td><td></td></tr></tbody></table>
+<table><thead><tr><th width="148">Activity</th><th>Session 1</th><th>Session 2</th><th>Session 3</th><th>Session 4</th></tr></thead><tbody><tr><td>Keynote</td><td><a href="https://drive.google.com/file/d/14HlsNayCnghifod9JyfXaLGBVcRlEtW8/view?usp=drive_link">Slides</a><br><a href="https://www.menti.com/alsc5obgc7z6">Menti</a></td><td><a href="https://drive.google.com/file/d/1pSrGRyvrpmPndBGaNaQutKU31AIEs52t/view?usp=drive_link">Slides</a></td><td>Slides</td><td>Slides</td></tr><tr><td>Skills development</td><td><a href="https://test-day1-npqfr.ondigitalocean.app/">App</a><br><a href="https://drive.google.com/file/d/18uKYzlF69mUaZjEUAMN_JD7jhDal4Jqa/view?usp=drive_link">Slides</a><br><a href="https://www.menti.com/alfgx5p5x3qq">Menti</a> </td><td><a href="https://test-day2-i5h5z.ondigitalocean.app/">App</a><br><a href="https://www.menti.com/altn98ny9d6h">Menti</a></td><td><a href="https://ai2050-day3-m252c.ondigitalocean.app/">App</a><br><a href="https://www.menti.com/alypgk7nwtd5">Menti</a></td><td><a href="https://drive.google.com/file/d/1Qwx3mSA_DdUQ7pbecsd9UgSjTdMguJYF/view?usp=drive_link">Slides</a></td></tr><tr><td>Breakout</td><td><p><a href="https://test-day1-npqfr.ondigitalocean.app/">App</a></p><p><a href="https://drive.google.com/file/d/1zbgxw40dtRVrtUWyCZACtH88R8UtEECI/view?usp=drive_link">Slides</a></p><p><a href="ai2050-ai-for-drug-discovery.md#breakout-session-day-1">Guide</a></p></td><td><p><a href="https://ersilia.io/model-hub">App</a></p><p><a href="https://drive.google.com/file/d/13kyE9HKACb2hShcMFT3nYEUKyDRQ8Hf-/view?usp=drive_link">Slides</a></p><p><a href="ai2050-ai-for-drug-discovery.md#breakout-session-day-2">Guide</a></p></td><td><a href="https://ai2050-day3-m252c.ondigitalocean.app/">App</a><br><a href="ai2050-ai-for-drug-discovery.md#breakout-session-day-3">Guide</a></td><td></td></tr></tbody></table>
 
 ## Important links
 
 In case you need further information to follow the course, be sure to check the following:
 
-* Ersilia Model Hub: list of all [available models](https://ersilia.io/model-hub)
-* Ersilia Model Hub: [self-service](https://github.com/ersilia-os/ersilia-self-service) on GitHub (requires a GitHub account)
-* Ersilia Model Hub: [local installation](../ersilia-model-hub/antibiotic-activity-prediction.md) documentation (only expert users)
-* [Publications](https://drive.google.com/drive/folders/1lSan\_efMH-mOVz41HM-aNvAqyIHcQ0Fr?usp=sharing) referred to during the workshop
-* [Datasets](https://drive.google.com/drive/folders/1FVd05NeUf\_zJXD-OlSyinmOi0lOcLdrr?usp=sharing) required for the workshop
+* Ersilia Model Hub: list of all [available models](https://ersilia.io/model-hub).
+* Ersilia Model Hub: [self-service](https://github.com/ersilia-os/ersilia-self-service) on GitHub (requires a GitHub account).
+* Ersilia Model Hub: [local installation](../ersilia-model-hub/antibiotic-activity-prediction.md) documentation (only expert users).
+* [Publications](https://drive.google.com/drive/folders/1lSan\_efMH-mOVz41HM-aNvAqyIHcQ0Fr?usp=sharing) referred to during the workshop.
+* [Datasets](https://drive.google.com/drive/folders/1FVd05NeUf\_zJXD-OlSyinmOi0lOcLdrr?usp=sharing) required for the workshop.
 
 ## Breakout Sessions
 
@@ -162,5 +162,50 @@ Extension: if you finish the proposed activity, have a look at what else is avai
 
 ### Breakout session day 3
 
-There are two ways&#x20;
+Sampling the chemical space is a fundamental task in computational drug discovery. Recently, generative AI methods have significantly expanded our sampling capabilities. As a result, traditionally laborious steps, such as hit-to-lead optimization, can now be supported by computational tools that generate new chemical matter as starting points for further analysis. In this session, we will experiment with some of these tools to sample the chemical space around a seed molecule.
+
+#### Step 1: Sample the chemical space around a seed molecule
+
+You will be presented with four hits obtained from an experimental screening against Burkholderia cenocepacia (growth inhibition assay). These will serve as your starting points. As a team, select one hit (seed) molecule for further analysis. Evaluate these molecules qualitatively from a medicinal chemistry perspective. Which seeds seem more chemically tractable and easier to modify? Do you recognize the chemical scaffolds? Ultimately, select one seed. There is no right or wrong answer.
+
+Next, you will have the opportunity to experiment with different “samplers” from the Ersilia Model Hub. Read the model descriptions and discuss the following:
+
+* Some samplers perform a similarity search against a large chemical library. Can you identify these samplers? Do you expect them to give deterministic results?
+* Other samplers generate genuinely new molecules. Of these, two are fragment-based and two are deep-learning (AI) based. Can you classify them?
+* What are the expected advantages and disadvantages of each type of model?
+* Some samplers may not yield results. What might be the reason for this?
+
+#### Step 2: Create a wishlist of molecules
+
+The best way to understand the behavior of sampling methods is to run them and explore the results, both visually and quantitatively. Feel free to sample compounds multiple times, trying different methods. There are filtering options in the app, as well as a simple display of the molecular structures.
+
+Ultimately, you should create a wishlist of 100-500 molecules, ideally obtained using multiple models. To create this wishlist, consider the following questions:
+
+* What is a reasonable range of Tanimoto similarities to the seed molecule?
+* Of the auxiliary properties (e.g., molecular weight, logP, and QED), which is the most relevant at this stage?
+
+#### Step 3: Predict properties of your molecule wishlist
+
+The Ersilia Model Hub contains a variety of activity and property prediction models that can be used to further assess your wishlist. In this case, we have selected three activity prediction models (eos4e40, eos5xng, and eos9f6t) and a multi-output ADMET model (eos7d58). Discuss the following with your team:
+
+* Which activity prediction model is best suited for this task?
+* Which 5 ADMET properties would you prioritize? There is no right or wrong answer.
+* What is more important at this stage: activity or ADMET properties?
+* ADMET values will be given in percentiles. What does this mean?
+
+Once you have made your decision, you can calculate these values for all the molecules in your wishlist.
+
+Explore results on two levels:
+
+1. General level: Assess whether molecules have high predicted activities (as desirable) and acceptable ADMET properties.
+2. Individual level: Select 3-5 molecules and discuss whether they are potentially good leads.
+
+#### Final step: Prepare a presentation
+
+Prepare a short presentation for the rest of the participants. The presentation should cover the following:
+
+* What seed did you choose and why?
+* Which sampler models did you find most useful?
+* What was your rationale for assembling your wishlist?
+* Which lead molecules did you select and why?
 
