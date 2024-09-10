@@ -170,7 +170,7 @@ Sampling the chemical space is a fundamental task in computational drug discover
 
 #### Step 1: Sample the chemical space around a seed molecule
 
-You will be presented with four hits obtained from an experimental screening against Burkholderia cenocepacia (growth inhibition assay). These will serve as your starting points. As a team, select one hit (seed) molecule for further analysis. Evaluate these molecules qualitatively from a medicinal chemistry perspective. Which seeds seem more chemically tractable and easier to modify? Do you recognize the chemical scaffolds? Ultimately, select one seed. There is no right or wrong answer.
+You will be presented with four hits obtained from an experimental screening against _Burkholderia cenocepacia_ (growth inhibition assay). These will serve as your starting points. As a team, **agree on one hit (seed) molecule for further analysis**. There is no right or wrong answer.
 
 Next, you will have the opportunity to experiment with different “samplers” from the Ersilia Model Hub. Read the model descriptions and discuss the following:
 
@@ -181,34 +181,38 @@ Next, you will have the opportunity to experiment with different “samplers” 
 
 #### Step 2: Create a wishlist of molecules
 
-The best way to understand the behavior of sampling methods is to run them and explore the results, both visually and quantitatively. Feel free to sample compounds multiple times, trying different methods. There are filtering options in the app, as well as a simple display of the molecular structures.
+The best way to understand the behavior of sampling methods is to run them and explore the results, both visually and quantitatively. Feel free to **sample compounds multiple times, trying different methods**. There are filtering options in the app, as well as a simple display of the molecular structures.
 
-Ultimately, you should create a wishlist of 100-500 molecules, ideally obtained using multiple models. To create this wishlist, consider the following questions:
+Ultimately, you should **create a wishlist of 100-500 molecules**, ideally obtained using multiple models. To create this wishlist, consider the following questions:
 
 * What is a reasonable range of Tanimoto similarities to the seed molecule?
 * Of the auxiliary properties (e.g., molecular weight, logP, and QED), which is the most relevant at this stage?
 
+{% hint style="info" %}
+Pro tip: open an Excel spreadsheet and copy-paste your molecules of interest them. Once you are satifsfied with them, copy-paste them in the relevant box in the app.
+{% endhint %}
+
 #### Step 3: Predict properties of your molecule wishlist
 
-The Ersilia Model Hub contains a variety of activity and property prediction models that can be used to further assess your wishlist. In this case, we have selected three activity prediction models (eos4e40, eos5xng, and eos9f6t) and a multi-output ADMET model (eos7d58). Discuss the following with your team:
+The Ersilia Model Hub contains a variety of activity and property prediction models that can be used to further assess your wishlist. In this case, we have selected **three activity prediction models** ([eos4e40](https://github.com/ersilia-os/eos4e40), [eos5xng](https://github.com/ersilia-os/eos5xng), and [eos9f6t](https://github.com/ersilia-os/eos9f6t)) and a multi-output **ADMET model** ([eos7d58](https://github.com/ersilia-os/eos7d58)). Discuss the following with your team:
 
 * Which activity prediction model is best suited for this task?
 * Which 5 ADMET properties would you prioritize? There is no right or wrong answer.
 * What is more important at this stage: activity or ADMET properties?
-* ADMET values will be given in percentiles. What does this mean?
+* ADMET values will be given in percentiles. How do you interpret these values?
 
-Once you have made your decision, you can calculate these values for all the molecules in your wishlist.
+Once you have made your decision, you can calculate your desired enpoints for all the molecules in your wishlist.
 
 Explore results on two levels:
 
-1. General level: Assess whether molecules have high predicted activities (as desirable) and acceptable ADMET properties.
-2. Individual level: Select 3-5 molecules and discuss whether they are potentially good leads.
+1. **General level:** Assess whether wishlist molecules have high predicted activities (as desirable) and acceptable ADMET properties.
+2. **Individual level:** Select 3-5 molecules and discuss whether they are good leads.
 
 #### Final step: Prepare a presentation
 
 Prepare a short presentation for the rest of the participants. The presentation should cover the following:
 
-* What seed did you choose and why?
+* What seed molecule did you choose and why?
 * Which sampler models did you find most useful?
 * What was your rationale for assembling your wishlist?
 * Which lead molecules did you select and why?
