@@ -208,6 +208,10 @@ Explore results on two levels:
 1. **General level:** Assess whether wishlist molecules have high predicted activities (as desirable) and acceptable ADMET properties.
 2. **Individual level:** Select 3-5 molecules and discuss whether they are good leads.
 
+{% hint style="success" %}
+Send your selected 3-5 compounds to [miquel@ersilia.io](mailto:miquel@ersilia.io). The title of your email should be "AI2050 Group N". Just copy-paste the SMILES strings of the molecules in the e-mail text.
+{% endhint %}
+
 #### Final step: Prepare a presentation
 
 Prepare a short presentation for the rest of the participants. The presentation should cover the following:
