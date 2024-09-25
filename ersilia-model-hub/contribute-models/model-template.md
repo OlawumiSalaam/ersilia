@@ -280,7 +280,7 @@ RUN pip install joblib==1.1.0
 WORKDIR /repo COPY . /repo
 </code></pre>
 
-The first line of the `Dockerfile` indicates that this Conda environment will have **BentoML 0.11.0** installed on **Python 3.7.** In this example, the `rdkit` library will be installed using `conda`, and `joblib` will be installed using `pip`.
+The first line of the `Dockerfile` indicates that this Conda environment will have **BentoML 0.11.0** installed on **Python 3.10.** In this example, the `rdkit` library will be installed using `conda`, and `joblib` will be installed using `pip`.
 
 The `Dockerfile` can contain as many `RUN` commands as necessary, between the `MAINTAINER` and the `WORKDIR` lines. Please limit the packages to the bare minimmum required, sometimes models have additional packages for extra functionalities that are not required to run the model. It is good practice to trim to the minimmum the package dependencies to avoid conflicts. Whenever possible, pin the version of the package.
 
