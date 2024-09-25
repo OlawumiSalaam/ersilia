@@ -244,7 +244,7 @@ In the template, the example provided is very simple. Depending on the model bei
 Each script will be one `main.py` file, we can create as many as necessary and rename them appropriately (see below for examples)
 {% endhint %}
 
-### The [`.gitignore`](https://github.com/ersilia-os/eos-template/blob/main/.gitignore) file
+### The `.gitattributes` file
 
 We use Git LFS to store large files (over 100 MB). Typically, these files are model parameters. Files to be stored in Git LFS should be specified in the `.gitattributes` file. The current file will store in Git LFS all files in `csv`, `h5`, `joblib`, `pkl`, `pt` and `tsv` format.
 
