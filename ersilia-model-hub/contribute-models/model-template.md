@@ -1,10 +1,14 @@
 ---
 description: >-
   This pages provides a deep dive into the structure of the model template for
-  new model incorporation
+  new model incorporation.
 ---
 
 # Model Template
+
+{% hint style="info" %}
+Model Incorporation has evolved at Ersilia, and while this workflow is largely based on its predecessor, there are some key differences in the legacy version and the workflow listed here. The instructions below lay out the steps from the current workflow for incorporating a model in the Ersilia Model Hub, with the last section pointing out the differences between the two versions.
+{% endhint %}
 
 ## Anatomy of the Ersilia Model Template
 
@@ -121,7 +125,7 @@ This dependency configuration file has two top level keys, namely, `python`, and
 The `install.yml` available in the Ersilia Model Template is the following:
 
 {% code title="install.yml" %}
-```docker
+```yaml
 python: "3.10"
 commands:
     - ["pip", "rdkit-pypi", "2022.3.1b1"]
@@ -254,3 +258,177 @@ We use Git LFS to store large files (over 100 MB). Typically, these files are mo
 *.joblib filter=lfs diff=lfs merge=lfs -text
 *.pkl filter=lfs diff=lfs merge=lfs -text
 ```
+
+## The Legacy Model Template
+
+At the time of writing this tutorial, the Ersilia Model Hub has approximately 150 models developed with this template. As mentioned above, this legacy template served as an inspiration for the current workflow, however there are several key differences that should be called out. These differences largely pertain to how dependencies are specified in these models, the tools used to create a model server, and source files facilitating that process.
+
+### The [`Dockerfile`](https://github.com/ersilia-os/eos-template/blob/42ce4063e67122968c3c948bd8ea142ac621c105/Dockerfile) file
+
+Ersilia uses a `Dockerfile` file to specify installation instructions. The reason for this is that Docker provides the maximum level of isolation possible (i.e. a container), which may be needed to run models in some systems. However, in most practical scenarios, a Docker container will not be necessary and a Conda environment, or even a Virtualenv environment, will suffice. The Ersilia CLI will decide which isolation level to provide depending on the content of the `Dockerfile:`
+
+The `Dockerfile` available in the Ersilia Model Template is the following:
+
+<pre class="language-docker"><code class="lang-docker"><strong>Dockerfile 
+</strong><strong>
+</strong><strong>FROM bentoml/model-server:0.11.0-py310 
+</strong>MAINTAINER ersilia
+
+RUN pip install rdkit==23. 
+RUN pip install joblib==1.1.0
+
+WORKDIR /repo COPY . /repo
+</code></pre>
+
+The first line of the `Dockerfile` indicates that this Conda environment will have **BentoML 0.11.0** installed on **Python 3.7.** In this example, the `rdkit` library will be installed using `conda`, and `joblib` will be installed using `pip`.
+
+The `Dockerfile` can contain as many `RUN` commands as necessary, between the `MAINTAINER` and the `WORKDIR` lines. Please limit the packages to the bare minimmum required, sometimes models have additional packages for extra functionalities that are not required to run the model. It is good practice to trim to the minimmum the package dependencies to avoid conflicts. Whenever possible, pin the version of the package.
+
+{% hint style="warning" %}
+The `Dockerfile` contains the installation instructions of the model. Therefore, the content of this file can be very variable, since each model will have its own dependencies.
+{% endhint %}
+
+### The [`service`](https://github.com/ersilia-os/eos-template/blob/42ce4063e67122968c3c948bd8ea142ac621c105/src/service.py) file
+
+The service file is located in `src/service.py`. It contains the necessary code to facilitate model bundling with BentoML.
+
+There are three main classes in the `service` file, namely `Model`, `Artifact` and `Service`.
+
+#### The `Model` class
+
+This class is simply a wrapper for the AI/ML model. Typically, when incorporating **external** (type 1) models, the `run.sh` script will already capture the logic within the `Model` class, in which case the `Model` class is simply redundant. However, when incorporating **internally developed** (types 2 and 3) models into the hub, we can make use of the artifacts for standard modeling frameworks (e.g. sklearn, PyTorch, and Keras) provided by BentoML, and the `Model` class becomes necessary for BentoML compatibility. Hence, the `Model` class enables generalization between these types of model additions.
+
+Typically, the central method of the `Model` class is the `run` method.
+
+```python
+class Model (object):
+    ...
+    def run(self, smiles_list):
+        ...
+```
+
+In this case, the model takes as input a list of molecules represented as SMILES strings. This is the standard input type for models focused on chemistry data as input.
+
+{% hint style="warning" %}
+Models incorporated with this workflow do not allow for multiple endpoints, or "methods". All models developed in this manner only have a single `run` API.
+{% endhint %}
+
+In its simplest form, the `Model` class just points Ersilia to the `model` directory and then creates a Bash file to execute the necessary commands to run the model. It is actually a very simple class, although it may look overwhelming at first. We break it down below:
+
+First, a temporary directory is created:
+
+```python
+ class Model(object):
+    ...
+    def run(self, smiles_list):
+        tmp_folder = tempfile.mkdtemp(prefix="eos-")
+        data_file = os.path.join(tmp_folder, self.DATA_FILE)
+        output_file = os.path.join(tmp_folder, self.OUTPUT_FILE)
+        log_file = os.path.join(tmp_folder, self.LOG_FILE)
+        ...
+```
+
+Then, a data file is created in the temporary directory. In this example, it is simply a one-column `csv` file having a header (`smiles`) and a list of molecules in SMILES format (one per row):
+
+```python
+class Model(object):
+    ...
+    def run(self, smiles_list):
+        ...
+        with open(data_file, "w") as f:
+            f.write("smiles"+os.linesep)
+            for smiles in smiles_list:
+                f.write(smiles+os.linesep)
+        ...
+```
+
+Now we already have the input file of the `run.sh`script, located in the `model/framework/` directory, as specified [above](model-template.md#the-model-folder). The following creates a dummy Bash script in the temporary directory and runs the command from there. The output is saved in the temporary directory too. [Remember](model-template.md#the-model-folder) that the `run.sh` script expects three arguments, `FRAMEWORK_DIR`_,_ `DATA_FILE` and `OUTPUT_FILE`.
+
+```python
+class Model(object):
+    ...
+    def run(self, smiles_list):
+        ...
+        run_file = os.path.join(tmp_folder, self.RUN_FILE)
+        with open(run_file, "w") as f:
+            lines = [
+                "bash {0}/run.sh {0} {1} {2}".format(
+                    self.framework_dir,
+                    data_file,
+                    output_file
+                )
+            ]
+            f.write(os.linesep.join(lines))
+        cmd = "bash {0}".format(run_file)
+        with open(log_file, "w") as fp:
+            subprocess.Popen(
+                cmd, stdout=fp, stderr=fp, shell=True, env=os.environ
+            ).wait()
+        ...
+```
+
+The last step is to read from the output in the temporary directory and return it in a JSON-serializable format. The output in the example is a `csv` table, with one or multiple columns, containing numeric data. The table has a header, which is read and saved as metadata.
+
+```python
+class Model(object):
+    ...
+    def run(self, smiles_list):
+        ...
+        with open(output_file, "r") as f:
+            reader = csv.reader(f)
+            h = next(reader)
+            R = []
+            for r in reader:
+                R += [{"outcome": [Float(x) for x in r]}]
+        meta = {
+            "outcome": h
+        }
+        result = {
+            "result": R,
+            "meta": meta
+        }
+        shutil.rmtree(tmp_folder)
+        return result
+```
+
+You will see that, in the template, pointers to potential edits are highlighted with the tag `# EDIT` . Necessary edits relate to the the format of the input data, or the serialization to JSON format from the output data.
+
+{% hint style="info" %}
+Advanced contributors may want to modify the `Model` class to load a model in-place (for example, a Scikit-Learn model) instead of executing a Bash command in the `model/framework/` directory.
+{% endhint %}
+
+#### The `Artifact` class
+
+This class mirrors [BentoML artifacts](https://docs.bentoml.org/en/0.13-lts/api/index.html). It simply contains `load`, `save`, `get and pack` functionalities:
+
+```python
+class Artifact(BentoServiceArtifact):
+    ...
+    def pack(self, model):
+        ...
+    def load(self, path):
+        ...
+    def get(self):
+        ...
+    def save(self, dst):
+        ...
+```
+
+You <mark style="color:red;">**don't have to modify**</mark> this class.
+
+#### The `Service` class
+
+This class is used to create the service. The service exposes the `run` API:&#x20;
+
+```python
+@artifacts([Artifact("model")])
+class Service(BentoService):
+    @api(input=JsonInput(), batch=True)
+    def run(self, input: List[JsonSerializable]):
+        input = input[0]
+        smiles_list = [inp["input"] for inp in input]
+        output = self.artifacts.model.run(smiles_list)
+        return [output]
+```
+
+By default, Ersilia works with JSON inputs, which are deserialized as a SMILES list inside the API, in this case. The deafult API is `run`. The general rule is, <mark style="color:red;">**do not modify**</mark> it.
