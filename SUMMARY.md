@@ -20,6 +20,7 @@
 
 * [Communication](contributors/communication.md)
 * [Internships](contributors/internships/README.md)
+  * [Outreachy Winter 2024](contributors/internships/outreachy-winter-2024.md)
   * [Outreachy Summer 2024](contributors/internships/outreachy-summer-2024.md)
   * [Outreachy Winter 2023](contributors/internships/outreachy-winter-2023.md)
   * [Outreachy Summer 2023](contributors/internships/outreachy-summer-2023.md)
