@@ -8,7 +8,7 @@ The Fundació Ersilia Open Source Initiative (Ersilia) is a non-profit organizat
 
 This project focuses on developing AI/ML models for antimicrobial drug discovery. The postdoctoral researcher will be leading the development of a) Bioactivity prediction models for key pathogens of Global Health concern and b) Generative AI modeling to expand the known chemical space for antiinfectives. Following Ersilia’s open source mandate, all models and data from this project will be publicly available and deployed through a unified web application framework, designed to serve researchers globally, especially those with limited access to advanced computational resources.
 
-The postdoctoral researcher will join Ersilia’s core team and will be supervised by Dr. Miquel Duran-Frigola, Ersilia’s co-founder and Lead Scientist. This position is supported by the Plan Generación Conocimiento 2024 from the Spanish Ministry of Science and Innovation (REF)
+The postdoctoral researcher will join Ersilia’s core team and will be supervised by Dr. Miquel Duran-Frigola, Ersilia’s co-founder and Lead Scientist. This position is supported by the Plan Generación Conocimiento 2024 from the Spanish Ministry of Science and Innovation.
 
 **Experience and qualifications**
 
