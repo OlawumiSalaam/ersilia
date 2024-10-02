@@ -88,10 +88,10 @@ Before incorporating the `sa-score` model to the Ersilia Model Hub, we need to m
 
 #### Create a conda environment
 
-No installation instructions are provided for this model. However, the `sascorer.py` file `import` statements indicate that, at least, `rdkit` is necessary. We can create a Conda environment and install the `rdkit` as follows:
+No installation instructions are provided for this model. However, the `sascorer.py` file `import` statements indicate that, at least, `rdkit` is necessary. We can create a Conda environment and install the `rdkit`  library as follows:
 
 ```bash
-conda create -n sa-score python=3.7
+conda create -n sa-score python=3.8
 conda activate sa-score
 pip install rdkit
 ```
@@ -443,59 +443,55 @@ The `service.py` file provided by default in the template manages chemistry inpu
 Modifying the `service.py` file is intended for advanced users only. Please use the Slack `#internships` channel if you think your model of interest requires modification of this file.
 {% endhint %}
 
-#### Edit the `Dockerfile` file
+#### Edit the `install.yml` file
 
-The `Dockerfile` file should include all the installation steps that you run after creating the working Conda environment. In the case of `sa-scorer`, we only installed RDKit:
+The `install.yml` file should include all the installation steps that you run after creating the working Conda environment. In the case of `sa-scorer`, we only installed RDKit:
 
-{% code title="Dockerfile" %}
-```docker
-FROM bentoml/model-server:0.11.0-py37
-MAINTAINER ersilia
+{% code title="install.yml" %}
+```yaml
+python: "3.10"
 
-RUN pip install rdkit
-
-WORKDIR /repo
-COPY . /repo
+commands:
+  - ["pip", "rdkit", "2023.3.1"]
 ```
 {% endcode %}
 
-#### Write the `metadata.json` file
+#### Write the `metadata.yml` file
 
-Don't forget to document the model. Read the [instructions to write the `metadata` file](example-of-the-model-incorporation-workflow.md#the-metadata.json-file) page. Feel free to ask for help in the Slack `#internships` channel.
+Don't forget to document the model. Read [the instructions to write the `metadata` file page](model-template.md#the-metadata.yml-file). Feel free to ask for help in the Slack `#internships` channel.
 
-The metadata.json for this model should read like:&#x20;
+The metadata.yml for this model should read like:&#x20;
 
-```json
-{
-    "Identifier": "eos9ei3",
-    "Slug": "sa-score",
-    "Status": "Ready",
-    "Title": "Synthetic accessibility score",
-    "Description": "Estimation of synthetic accessibility score (SAScore) of drug-like molecules based on molecular complexity and fragment contributions. The fragment contributions are based on a 1M sample from PubChem and the molecular complexity is based on the presence/absence of non-standard structural features. It has been validated comparing the SAScore and the estimates of medicinal chemist experts for 40 molecules (r2 = 0.89). The SAScore has been contributed to the RDKit Package.\n",
-    "Mode": "Pretrained",
-    "Input": [
-        "Compound"
-    ],
-    "Input Shape": "Single",
-    "Task": [
-        "Regression"
-    ],
-    "Output": [
-        "Score"
-    ],
-    "Output Type": [
-        "Float"
-    ],
-    "Output Shape": "Single",
-    "Interpretation": "Low scores indicate higher synthetic accessibility",
-    "Tag": [
-        "Synthetic accessibility",
-        "Chemical synthesis"
-    ],
-    "Publication": "https://jcheminf.biomedcentral.com/articles/10.1186/1758-2946-1-8",
-    "Source Code": "https://github.com/rdkit/rdkit/tree/master/Contrib/SA_Score",
-    "License": "BSD-3.0",
-    "Contributor": "github-user"
+```yaml
+Identifier: eos9ei3
+Slug: sa-score
+Status: Ready
+Title: Synthetic accessibility score
+Description: "Estimation of synthetic accessibility score (SAScore) of drug-like molecules based on molecular complexity and fragment contributions. The fragment contributions are based on a 1M sample from PubChem and the molecular complexity is based on the presence/absence of non-standard structural features. It has been validated comparing the SAScore and the estimates of medicinal chemist experts for 40 molecules (r2 = 0.89). The SAScore has been contributed to the RDKit Package.\n"
+Mode: Pretrained
+Input:
+    - Compound
+Input Shape: Single
+Task:
+    - Regression
+Output:
+    - Score
+Output Type:
+    - Float
+Output Shape: Single
+Interpretation: Low scores indicate higher synthetic accessibility
+Tag:
+    - Synthetic accessibility
+    - Chemical synthesis
+Publication: https://jcheminf.biomedcentral.com/articles/10.1186/1758-2946-1-8
+Source Code: https://github.com/rdkit/rdkit/tree/master/Contrib/SA_Score
+License: BSD-3.0
+Contributor: miquelduranfrigola
+S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9ei3.zip
+DockerHub: https://hub.docker.com/r/ersiliaos/eos9ei3
+Docker Architecture:
+    - AMD64
+    - ARM64
 ```
 
 ### 5. Run the local model inside Ersilia

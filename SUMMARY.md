@@ -51,6 +51,7 @@
 
 ## 🌍 About Us
 
+* [Job offer: Postdoctoral researcher in AI/ML for Antimicrobial Drug Discovery](about-us/job-offer-postdoctoral-researcher-in-ai-ml-for-antimicrobial-drug-discovery.md)
 * [Diversity and Inclusion Statement](about-us/diversity-and-inclusion-statement.md)
 * [Code of Conduct](about-us/code-of-conduct.md)
 * [Open Standards and Best Practices](about-us/open-standards-and-best-practices.md)
